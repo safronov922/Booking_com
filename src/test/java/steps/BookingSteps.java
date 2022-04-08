@@ -57,6 +57,8 @@ public class BookingSteps {
     }
     @Then("Hotel score {string} displayed")
     public void hotelScoreDisplayed(String rateExpected) {
+        String rateActual = driver.findElement(By.cssSelector("[aria-label='Scored 8.1 ']")).getText();
+        Assert.assertEquals(rateActual,rateExpected);
 
     }
     @After

@@ -6,4 +6,4 @@ Feature: Search hotels
     And click on search result
     And click Search button
     Then Hotel with name "Hotel Yubileiny" displayed on page
-    Then Hotel score "Scored 8.1" displayed
+    Then Hotel score "8.1" displayed
